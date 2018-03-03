@@ -1,25 +1,24 @@
 /** {box-sizing:border-box}*/
 
 /* Slideshow container */
-.slideshow-containerBp {
+.slideshow-containerNatural {
   max-width: 1000px;
   position: relative;
-  height: auto;
   margin: auto;
-  
 }
 
-.slideshow-containerBp img {
+.slideshow-containerNatural img {
+  max-height: 80vh;
   border: 2px solid rgba(255, 255, 255, 0.9);
 }
 
 /* Hide the images by default */
-.mySlidesBp {
+.mySlidesNatural {
   display: none;
 }
 
 /* Next & previous buttons */
-.prevBp, .nextBp {
+.prevNatural, .nextNatural {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -34,13 +33,13 @@
 }
 
 /* Position the "next button" to the right */
-.nextBp {
+.nextNatural {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prevBp:hover, .nextBp:hover {
+.prevNatural:hover, .nextNatural:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -56,7 +55,7 @@
 }*/
 
 /* Number text (1/3 etc) */
-.numbertext {
+.numbertextNatural {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -81,19 +80,19 @@
 }*/
 
 /* Fading animation */
-.fade {
+.fadeNatural {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fadeNatural {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fadeNatural {
   from {opacity: .4} 
   to {opacity: 1}
 }

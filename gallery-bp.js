@@ -1,30 +1,30 @@
 //This code from w3schools - ford the slideshow
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndexBp = 1;
+showSlidesBp(slideIndexBp);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlidesBp(nBp) {
+  showSlidesBp(slideIndexBp += nBp);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlideBp(nBp) {
+  showSlidesBp(slideIndexBp = nBp);
 }
 
-function showSlides(n) {
+function showSlidesBp(nBp) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  var slides = document.getElementsByClassName("mySlidesBp");
+  //var dots = document.getElementsByClassName("dot");
+  if (nBp > slides.length) {slideIndexBp = 1} 
+  if (nBp < 1) {slideIndexBp = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  //for (i = 0; i < dots.length; i++) {
+  //    dots[i].className = dots[i].className.replace(" active", "");
+  //}
+  slides[slideIndexBp-1].style.display = "block"; 
+  //dots[slideIndex-1].className += " active";
 }

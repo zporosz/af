@@ -80,50 +80,55 @@ $(document).ready(function(){
    
    // Pushed the 'Budapest' button
    // Show: Budapest, Hide: Madarak, Tájképek
-    $( ".galleryPageBp" ).animate({ "margin-left": "0" }, "slow" ); 
-    $( ".galleryPageBp" ).css( "visibility", "visible" );
+    $( ".galleryPageBp").fadeIn( "2000" );
     $( ".menuBp" ).css( "color", "blue" );  
    
-    $( ".galleryPageBirds" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageBirds" ).css( "visibility", "hidden" );
+    $( ".galleryPageBirds" ).fadeOut( "2000" );
     $( ".menuBirds" ).css( "color", "rgba(0, 0, 0, 0.8)" );
    
-    $( ".galleryPageNatural" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageNatural" ).css( "visibility", "hidden" );
+    $( ".galleryPageNatural" ).fadeOut( "2000" );
     $( ".menuNatural" ).css( "color", "rgba(0, 0, 0, 0.8)" );
   });
   
   // Pushed the 'Madarak' button
    // Show: Madarak, Hide: Budapest, Természet
   $( ".menuBirds" ).click(function() {
-    $( ".galleryPageBp" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageBp" ).css( "visibility", "hidden" );
+    $( ".galleryPageBp" ).fadeOut( "2000" );
     $( ".menuBp" ).css( "color", "rgba(0, 0, 0, 0.8)" );
     
-    $( ".galleryPageBirds" ).animate({ "margin-left": "0" }, "slow" );
-    $( ".galleryPageBirds" ).css( "visibility", "visible" );
+    $( ".galleryPageBirds" ).fadeIn( "2000" );
     $( ".menuBirds" ).css( "color", "blue" );
     
-    $( ".galleryPageNatural" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageNatural" ).css( "visibility", "hidden" );
+    $( ".galleryPageNatural" ).fadeOut( "2000" );
     $( ".menuNatural" ).css( "color", "rgba(0, 0, 0, 0.8)" );
   });
   
   // Pushed the 'Természet' button
    // Show: Természet, Hide: Budapest, Madarak
   $( ".menuNatural" ).click(function() {
-    $( ".galleryPageBp" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageBp" ).css( "visibility", "hidden" );
+    $( ".galleryPageBp" ).fadeOut( "2000" );
     $( ".menuBp" ).css( "color", "rgba(0, 0, 0, 0.8)" );
     
-    $( ".galleryPageBirds" ).animate({ "margin-left": "100%" }, "slow" );
-    $( ".galleryPageBirds" ).css( "visibility", "hidden" );
+    $( ".galleryPageBirds" ).fadeOut( "2000" );
     $( ".menuBirds" ).css( "color", "rgba(0, 0, 0, 0.8)" );
     
-    $( ".galleryPageNatural" ).animate({ "margin-left": "0" }, "slow" );
-    $( ".galleryPageNatural" ).css( "visibility", "visible" );
+    $( ".galleryPageNatural" ).fadeIn( "2000" );
     $( ".menuNatural" ).css( "color", "blue" );
   });
+  
+  // Pushed the '>>' (Hide) button
+   // Show: -, Hide: Budapest, Madarak, Természet
+  $( ".menuHide" ).click(function() {
+    $( ".galleryPageBp" ).fadeOut( "2000" );
+    $( ".menuBp" ).css( "color", "rgba(0, 0, 0, 0.8)" );
+    
+    $( ".galleryPageBirds" ).fadeOut( "2000" );
+    $( ".menuBirds" ).css( "color", "rgba(0, 0, 0, 0.8)" );
+    
+    $( ".galleryPageNatural" ).fadeOut( "2000" );
+    $( ".menuNatural" ).css( "color", "rgba(0, 0, 0, 0.8)" );
+  });
+  
 });
 
 

@@ -55,8 +55,8 @@
   position: relative;
   width: auto;
   height: auto;
+  margin: auto;
   margin-top: 40vh;
-  margin-left: 110pt;
   left: 0;
   right: 0;
   padding: 2rem;
@@ -143,7 +143,6 @@
   display: inline-block;
   position: relative;
   width: auto%;
-  padding-left: 110pt;
 }
 
 .profilPicture img{
