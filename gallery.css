@@ -24,22 +24,23 @@
 }
 
 .galleryPages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 100%;
-  height: 85vh;
+  height: auto;
 }
 
 .galleryPageBp,
 .galleryPageBirds,
 .galleryPageNatural {
-  position: absolute;
-  max-width: 900px;
-  height: 80.1vh;
-  margin: 0 2rem;
-  margin-top: -1rem;
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 1rem;
 }
 
-
-
+@media (max-width: 768px) {
+  .menuPage2 {
+    font-size: 1rem;
+  }
+}

@@ -57,8 +57,6 @@
   height: auto;
   margin: auto;
   margin-top: 40vh;
-  left: 0;
-  right: 0;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -67,6 +65,17 @@
   margin: auto;
   line-height: 140%;
   letter-spacing: 4px;
+}
+
+
+.name {
+  color: #d2ba87;
+  font-size: 80px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
 }
 
 .menu {
@@ -95,16 +104,6 @@
 .menuButton:hover {
   color: red;
   cursor: pointer;
-}
-
-.name {
-  color: #d2ba87;
-  font-size: 80px;
-}
-
-.title {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 50px;
 }
 
 .title:before,
@@ -169,7 +168,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 20vh;
+  min-height: 20vh;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.6);
   border-top: 2px solid rgba(0, 0, 0, 01);
@@ -181,4 +180,55 @@
   letter-spacing: 2px;
 }
 
+@media (max-width: 768px) {
+  .coverContainer {
+    min-width: 110vw;
+  }
+  
+  .cover h1 {
+    line-height: 120%;
+    letter-spacing: 3px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+  
+  .menu {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    font-size: 1.2rem;
+    background-color: rgba(200, 200, 200, 1);
+  }
+  
+  .menuButton {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  .menuHome {
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 0 1rem;
+    background-color: rgba(200, 200, 200, 1);
+  }
+  
+  .separator {
+    min-height: auto;
+    font-size: 2rem;
+  }
+  
+  .profilPicture img:hover{
+  width: 250px;
+}
+}
 

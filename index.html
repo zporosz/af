@@ -19,8 +19,13 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   
 </head>
-  
-<body>
+
+<!-- Right Click Block -->
+<script language="JavaScript">
+document.oncontextmenu = new Function("return false;")
+</script>
+<body onselectstart="return false"> <!-- This is part of right click block -->
+
 <div class="mainCover">
   
   <div class="page page1">
@@ -39,6 +44,7 @@
     </div>
   </div>
   
+  <!--- This separator is between Page1 and Page2 -->
   <div class="separator">
     <div class="separator1">
       <h2>Galéria</h2>
@@ -55,7 +61,6 @@
     
      <div class="galleryPages">
       <div class="galleryPageBp">
-      
         <div class="slideshow-containerBp" title="Budapest">
         <!-- Full-width images with number and caption text -->
           
@@ -323,9 +328,7 @@
           <a class="prevBirds" onclick="plusSlidesBirds(-1)">&#10094;</a>
           <a class="nextBirds" onclick="plusSlidesBirds(1)">&#10095;</a>
         </div>
-        
-        
-       </div>
+      </div>
        
       <div class="galleryPageNatural">
         <div class="slideshow-containerNatural" title="Természet és tájak">
@@ -404,17 +407,12 @@
            <!-- Next and previous buttons -->
           <a class="prevNatural" onclick="plusSlidesNatural(-1)">&#10094;</a>
           <a class="nextNatural" onclick="plusSlidesNatural(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- <p>
-          NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL NATURAL ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ultricies ex. Sed dapibus rutrum augue id semper. Maecenas nec lobortis magna. Nam imperdiet fermentum ultricies. Curabitur posuere eleifend nisl eget fringilla. Aenean in purus eget sem viverra ornare sed a sapien. Nulla ut sem cursus, faucibus ligula a, tincidunt felis. Aenean quis magna ac nibh condimentum imperdiet vitae et nunc. Sed nec sem id nunc sagittis semper et sed purus. Pellentesque consectetur risus maximus odio tempor vestibulum.
-        </p> -->
+        </div> 
       </div>
-      
     </div>
   </div>
   
+  <!--- This separator is between Page2 and Page3 -->
   <div class="separator">
     <div class="separator2">
       <h2>A fotós</h2>
@@ -433,6 +431,7 @@
   <div class="page page3">
   </div>
   
+  <!--- This separator is between Page3 and Page4 -->
   <div class="separator">
     <div class="separator3">
       <h2>Kapcsolat</h2>
@@ -443,7 +442,7 @@
     <div class="footerBox">
       <div class="footerText">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ultricies ex. Sed dapibus rutrum augue id semper. Maecenas nec lobortis magna. Nam imperdiet fermentum ultricies. Curabitur posuere eleifend nisl eget 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ultricies ex. Sed dapibus rutrum augue id semper. Maecenas nec lobortis magna. Nam imperdiet fermentum ultricies. Curabitur posuere eleifend nisl eget.
         </p>
       </div>
     </div>
@@ -453,10 +452,11 @@
 </body>
   
   <!-- Insert scripts section -->
-  
   <!-- jGuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script>
+  
+  <!-- At the load hide the gallery pages -->
+  <script>    
     $( ".galleryPageBp").fadeOut( "1" );
     $( ".galleryPageBirds").fadeOut( "1" );
     $( ".galleryPageNatural").fadeOut( "1" );
